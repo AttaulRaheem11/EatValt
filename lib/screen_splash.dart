@@ -28,7 +28,12 @@ class SplashScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Icon(Icons.restaurant, size: 100, color: Colors.white),
+            Image.asset(
+              'assets/image/eatvalt_logo.png',
+              height: 280,      // Adjust as needed
+              width: 280,       // Adjust as needed
+              fit: BoxFit.contain, // Ensures the logo scales properly
+            ),
             const SizedBox(height: 20),
             Text(
               'EatValt',

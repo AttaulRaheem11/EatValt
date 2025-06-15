@@ -37,11 +37,17 @@ class _LoginScreenState extends State<LoginScreen> {
           key: _formKey,
           child: Column(
             children: [
+              Center(
+                child: Image.asset(
+                  'assets/image/eatvalt_logo.png', //  logo path
+                  height: 200,
+                ),
+              ),
               TextFormField(
                 controller: _emailController,
                 decoration: const InputDecoration(
                   labelText: 'Email',
-                  prefixIcon: Icon(Icons.email),
+                  prefixIcon: Icon(Icons.alternate_email),
                 ),
                 validator: (value) {
                   if (value == null || value.isEmpty) {
